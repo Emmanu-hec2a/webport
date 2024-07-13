@@ -122,6 +122,8 @@
                     </ul>
                 </form>
                 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="iframeLoaded()"></iframe>
+
+
                 <ul class="icons">
                     <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
                     <li><a href="https://wa.me/qr/2AWGITBIQJJ5G1" class="icon brands fa-whatsapp"><span class="label">WhatsApp</span></a></li>
@@ -195,29 +197,43 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
     <div id="bg"></div>
 
     <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+    <!-- <script src="/assets/js/korm.js"></script> -->
 
-    <script>
-        function formSubmitted(event) {
-            event.preventDefault();
-            document.getElementById('submitBtn').disabled = true;
-            document.getElementById('submitBtn').value = "Sending...";
-            event.target.submit();
-        }
+	<script>
+		var submitted = false;
+ 
+ 			function formSubmitted(event) {
+ 				submitted = true;
 
-        function iframeLoaded() {
-            var iframe = document.getElementById('hidden_iframe');
-            if (iframe.contentDocument.body.innerHTML.indexOf("success") != -1) {
-                alert("Message sent successfully!");
-                document.getElementById('submitBtn').value = "Send Message";
-                document.getElementById('submitBtn').disabled = false;
-                document.querySelector('form').reset();
-            }
-        }
-    </script>
+ // Change button to 'Sending' state
+ 			var submitBtn = document.getElementById('submitBtn');
+ 				submitBtn.disabled = true; // Disable the button to prevent multiple submissions
+ 				submitBtn.value = 'Sending...';
+ 				submitBtn.innerHTML = '<i class="fa fa-spinner fa-spin"></i> Sending';
+ 			}
+
+ 			function iframeLoaded() {
+	 			if (submitted) {
+		 			submitted = false; // Reset the flag
+
+	 // Alert the user
+		 			alert('Your details have been successfully submitted.');
+
+	 // Reset the button to its original state
+		 			var submitBtn = document.getElementById('submitBtn');
+		 			submitBtn.disabled = false; // Re-enable the button
+		 			submitBtn.value = 'Send Message';
+		 			submitBtn.innerHTML = 'Send Message';
+
+	 // Redirect to the home page
+	 				window.location.href = '/';
+	 			}
+ 			}
+	</script>
 </body>
 </html>

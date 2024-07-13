@@ -119,6 +119,7 @@ input, select, textarea {
 
 			html {
 				font-size: 12pt;
+				font-weight: bold;
 			}
 
 		}
@@ -135,6 +136,7 @@ input, select, textarea {
 
 			html {
 				font-size: 10pt;
+				font-weight: bold;
 			}
 
 		}
