@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="icon" href="favicon.ico" sizes="16x16" type="image/x-icon">
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 <body class="is-preload">
@@ -27,10 +28,11 @@
             <nav>
                 <ul>
                     <li><a href="#intro">Intro</a></li>
-                    <li><a href="#work">Work</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#work">Work</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#documents">Documents</a></li>
                 </ul>
             </nav>
         </header>
@@ -43,14 +45,6 @@
                 <h2 class="major" style="color:aqua">Intro</h2>
                 <span class="image main" style="height:fit-content; width:100%; border-radius: 5px; margin-bottom: 15px;"><img src="images/me.jpg" alt="" /></span>
                 <p>I'm Emmanuel Odongo, a Junior Data Scientist skilled in data analysis using Python, Excel, and Tableau. Passionate about AI and ML, I strive to leverage data to drive impactful insights and solutions. Explore my projects and let's connect! <a href="#work">awesome work</a>.</p>
-            </article>
-
-            <!-- Work -->
-            <article id="work">
-                <h2 class="major" style="color:aqua">Work</h2>
-                <span class="image main"><img src="images/bgnd.jpg" alt="" /></span>
-                <p>My expertise lies in utilizing powerful tools such as Python libraries (Pandas, NumPy, Matplotlib), Excel, and Tableau to extract insights and drive data-driven decision-making.</p>
-                <p>I am passionate about Artificial Intelligence and Machine Learning, constantly seeking opportunities to expand my knowledge and apply innovative techniques to solve complex problems. My commitment to continuous learning and development ensures that I stay at the forefront of technological advancements in the field.</p>
             </article>
 
             <!-- About -->
@@ -75,36 +69,12 @@
                 </ul>
             </article>
 
-            <!-- Contact -->
-            <article id="contact">
-                <h2 class="major" style="color:aqua">Contact</h2>
-                <form method="post" action="https://script.google.com/macros/s/AKfycbyh3bOGZsb58k2B5EifOPv3ftGt7Zcu8xfRpGFQroKc3EvhYx9bAOVEjr6b4PzucW3c1A/exec" target="hidden_iframe" onsubmit="formSubmitted(event);">
-                    <div class="fields">
-                        <div class="field half">
-                            <label for="name">Name</label>
-                            <input type="text" name="name" id="name" />
-                        </div>
-                        <div class="field half">
-                            <label for="email">Email</label>
-                            <input type="text" name="email" id="email" />
-                        </div>
-                        <div class="field">
-                            <label for="message">Message</label>
-                            <textarea name="message" id="message" rows="4"></textarea>
-                        </div>
-                    </div>
-                    <ul class="actions">
-                        <li><input type="submit" id="submitBtn" value="Send Message" class="primary" /></li>
-                        <li><input type="reset" value="Reset" /></li>
-                    </ul>
-                </form>
-                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="iframeLoaded()"></iframe>
-                <ul class="icons">
-                    <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                    <li><a href="https://wa.me/qr/2AWGITBIQJJ5G1" class="icon brands fa-whatsapp"><span class="label">WhatsApp</span></a></li>
-                    <li><a href="https://www.linkedin.com/in/emmanuel-odongo-2049a2292/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                    <li><a href="https://github.com/Emmanu-hec2a" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-                </ul>
+            <!-- Work -->
+            <article id="work">
+                <h2 class="major" style="color:aqua">Work</h2>
+                <span class="image main"><img src="images/bgnd.jpg" alt="" /></span>
+                <p>My expertise lies in utilizing powerful tools such as Python libraries (Pandas, NumPy, Matplotlib), Excel, and Tableau to extract insights and drive data-driven decision-making.</p>
+                <p>I am passionate about Artificial Intelligence and Machine Learning, constantly seeking opportunities to expand my knowledge and apply innovative techniques to solve complex problems. My commitment to continuous learning and development ensures that I stay at the forefront of technological advancements in the field.</p>
             </article>
 
             <!-- Projects -->
@@ -126,6 +96,56 @@
                     </div>
                     <!-- Add more project cards as needed -->
                 </div>
+            </article>
+
+            <!-- Contact -->
+            <article id="contact">
+                <h2 class="major" style="color:aqua">Contact</h2>
+                <form method="post" action="https://script.google.com/macros/s/AKfycbyh3bOGZsb58k2B5EifOPv3ftGt7Zcu8xfRpGFQroKc3EvhYx9bAOVEjr6b4PzucW3c1A/exec" target="hidden_iframe" onsubmit="formSubmitted(event);">
+                    <div class="fields">
+                        <div class="field half">
+                            <label for="name" required>Name</label>
+                            <input type="text" name="name" id="name" placeholder="e.g John Doe"/>
+                        </div>
+                        <div class="field half">
+                            <label for="email" required>Email</label>
+                            <input type="email" name="email" id="email" placeholder="example@gmail.com"/>
+                        </div>
+                        <div class="field">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" rows="4" placeholder="write your message here..."></textarea>
+                        </div>
+                    </div>
+                    <ul class="actions">
+                        <li><input type="submit" id="submitBtn" value="Send Message" class="primary" /></li>
+                        <li><input type="reset" value="Reset" /></li>
+                    </ul>
+                </form>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="iframeLoaded()"></iframe>
+                <ul class="icons">
+                    <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="https://wa.me/qr/2AWGITBIQJJ5G1" class="icon brands fa-whatsapp"><span class="label">WhatsApp</span></a></li>
+                    <li><a href="https://www.linkedin.com/in/emmanuel-odongo-2049a2292/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="https://github.com/Emmanu-hec2a" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                </ul>
+            </article>
+
+            <!--My Documents-->
+            <article id="documents">
+                <h2 class="major">Documents</h2>
+                <ul>
+                    <div>
+                        <h4>My Resumee</h4>
+                        <li><button><a href="https://drive.google.com/file/d/1O4_BkZ4c3XaRSoUF4cYkPwKFIpTQjAge/view?usp=sharing" target="_blank">Resume</a></button></li>
+                    </div><br>
+                    <p>_____________________________________</p>
+
+                    <div>
+                        <h4>My Curriculum Vitae</h4>
+                    <!--li><a href="documents/cv.pdf" target="_blank">CV</a></li-->
+                        <li><button><a href="#" target="_blank">Curriculum Vitae</a></button></li>
+                    </div>
+                </ul>
             </article>
 
             <!-- Elements -->
