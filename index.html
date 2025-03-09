@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="icon" type="image/png" href="images/rn_logo.jpg">
     <!-- <link rel="icon" href="favicon.ico" sizes="16x16" type="image/x-icon"> -->
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
@@ -21,7 +22,7 @@
             <div class="content">
                 <div class="inner">
                     <h1 style="color:aqua;">Emmanuel Odongo</h1>
-                    <p>Fully designed by <a href="#">Emmanuel</a> and released<br />
+                    <p>Fully designed by <a href="#">Emmanuel</a> and released<br/>
                         by <a href="#">Emmanuel</a></p>
                 </div>
             </div>
@@ -44,7 +45,7 @@
             <!-- Intro -->
             <article id="intro">
                 <h2 class="major" style="color:aqua">Intro</h2>
-                <span class="image main" style="height:fit-content; width:100%; border-radius: 5px; margin-bottom: 15px;"><img src="images/me.jpg" alt="" /></span>
+                <span class="image main" style="height:fit-content; width:100%; border-radius: 5px; margin-bottom: 15px;"><img src="images/me.jpg" alt=""/></span>
                 <p>I'm Emmanuel Odongo, a Junior Data Scientist skilled in data analysis using Python, Excel, and Tableau. Passionate about AI and ML, I strive to leverage data to drive impactful insights and solutions. Explore my projects and let's connect! <a href="#work">awesome work</a>.</p>
                 <div>
                     <h3>My Courses</h3>
@@ -89,20 +90,27 @@
 
             <!-- Projects -->
             <article id="projects">
-                <h2 class="major" style="color:aqua">Projects</h2>
+                <h2 class="major" style="color:aqua">Projects</h2><br>
                 <div class="projects-grid">
                     <div class="project-card">
                         <!--img src="images/dinosaur_project.png" alt="Dinosaurs Data Analysis" /-->
                         <h3>Dinosaurs Data Analysis</h3>
-                        <p>Data analysis using Python & MySQL to uncover insights about dinosaur species.</p>
-                        <a href="https://www.datacamp.com/datalab/w/d55d66d9-2147-4119-b944-5dcba14e1708/edit" class="button">View Project</a>
+                        <!-- <p>Data analysis using Python & MySQL to uncover insights about dinosaur species.</p> -->
+                        <button><a href="https://www.datacamp.com/datalab/w/d55d66d9-2147-4119-b944-5dcba14e1708/edit" target="_blank" rel="noopener noreferrer">View Project</a></button>
                     </div><br>
 
                     <div class="project-card">
                         <!-- <span class="image main"><img src="/images/OnlineShop.jpg" alt="Online Shop Customer Sales Report" /></span> -->
                         <h3>Online Shop Customer Sales Report</h3>
-                        <p>Comprehensive sales report of an online shop using Google Looker Studio.</p>
-                        <a href="https://lookerstudio.google.com/u/0/reporting/1fbfb7c7-ce1e-4b01-bcb4-2c6e989a4cd1/page/MYt0D" class="button">View Project</a>
+                        <!-- <p>Comprehensive sales report of an online shop using Google Looker Studio.</p> -->
+                        <button><a href="https://lookerstudio.google.com/u/0/reporting/1fbfb7c7-ce1e-4b01-bcb4-2c6e989a4cd1/page/MYt0D" target="_blank" rel="noopener noreferrer">View Project</a></button>
+                    </div>
+
+                    <div class="project-card">
+                        <!-- <span class="image main"><img src="/images/OnlineShop.jpg" alt="Online Shop Customer Sales Report" /></span> -->
+                        <h3>Tribute Web page for Kisumu County</h3>
+                        <p></p>
+                        <button><a href="https://Emmanu-hec2a.github.io/kisumucity" target="_blank" rel="noopener noreferrer">View Project</a></button>
                     </div>
                     <!-- Add more project cards as needed -->
                 </div>
@@ -144,20 +152,20 @@
 
             <!--My Documents-->
             <article id="documents">
-                <h2 class="major">Documents</h2>
-                <ul>
-                    <div>
+                <h2 class="major" style="color: aqua;">Documents</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
                         <h4>My Resumee</h4>
-                        <li><button><a href="https://drive.google.com/file/d/1O4_BkZ4c3XaRSoUF4cYkPwKFIpTQjAge/view?usp=sharing" target="_blank">Resume</a></button></li>
+                        <button><a href="https://drive.google.com/file/d/1O4_BkZ4c3XaRSoUF4cYkPwKFIpTQjAge/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a></button>
                     </div><br>
-                    <p>_____________________________________</p>
+                    <!-- <p>_____________________________________</p> -->
 
-                    <div>
+                    <div class="project-card">
                         <h4>My Curriculum Vitae</h4>
                     <!--li><a href="documents/cv.pdf" target="_blank">CV</a></li-->
-                        <li><button><a href="#" target="_blank">Curriculum Vitae</a></button></li>
+                        <button><a href="#" target="_blank" rel="noopener noreferrer">Curriculum Vitae</a></button>
                     </div>
-                </ul>
+                </div>
             </article>
 
             <!-- Courses -->
@@ -258,6 +266,13 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 	 			window.location.href = '#';
 	 			}
  			}
+
+    //         document.addEventListener("DOMContentLoaded", function() {
+    //             document.querySelectorAll("a").forEach(link => {
+    //                 link.setAttribute("target", "_blank");
+    //                 link.setAttribute("rel", "noopener noreferrer");
+    //     });
+    // });
 	</script>
 </body>
 </html>

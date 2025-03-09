@@ -1,0 +1,32 @@
+body{
+    background-color: black;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    justify-content: flex-start;
+    -o-text-overflow: ellipsis;
+    margin-top: 20%;
+}
+h1{
+    color:aqua;
+    align-content: first baseline;
+    text-align: center;
+    /* margin-top: 25%; */
+    /* padding: 20% 20% 20% 20%; */
+}
+h2{
+    color:aqua;
+    align-content: first baseline;
+    text-align: center;
+    /* margin-top: 50%; */
+    /* padding: 20% 20%; */
+}
+p{
+    text-align: center;
+    color:aliceblue;
+    /* margin-top: 50%; */
+}
+#square{
+    border-radius: 5px;
+    border-color: white;
+
+}

@@ -701,6 +701,7 @@ input, select, textarea {
 			display: block;
 			margin: 2.5rem 0;
 			width: 100%;
+
 		}
 
 			.image.main img {
@@ -1696,7 +1697,7 @@ input, select, textarea {
 		color: #666;
 	} */
 
-	.project-card .button {
+	/* .project-card .button {
 		margin-top: 10px;
 		display: inline-block;
 		padding: 10px 15px 20px 25px;
@@ -1710,6 +1711,87 @@ input, select, textarea {
 	.project-card .button:hover {
 		background-color:aqua;
 		text-decoration-color: #1b1f22;
+	} */
+
+	/* Projects Section */
+	#projects, #documents {
+		padding: 50px 10%;
+		text-align: center;
+		background-color: #121212; /* Dark background for contrast */
+		color: #fff;
+	}
+
+	#projects h2 {
+		color: aqua;
+		font-size: 2.5rem;
+		margin-bottom: 20px;
+	}
+
+	/* Project Grid */
+	.projects-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+		gap: 30px;
+		justify-items: center;
+		flex-wrap: wrap;
+	}
+
+	/* Project Cards */
+	.project-card {
+		background: #1e1e1e;
+		border-radius: 12px;
+		padding: 20px;
+		text-align: center;
+		box-shadow: 0 4px 8px rgba(0, 255, 255, 0.2);
+		transition: transform 0.3s, box-shadow 0.3s;
+		max-width: 350px;
+		flex: 1;
+		min-width: 300px;
+		position: relative;
+	}
+
+	/* Add vertical line */
+.project-card:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 10%;
+    right: -15px; /* Adjust based on gap */
+    height: 80%;
+    width: 3px;
+    background: rgba(0, 255, 255, 0.4); /* Aqua color for contrast */
+}
+
+	.project-card:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 6px 12px rgba(0, 255, 255, 0.4);
+	}
+
+	.project-card h3 {
+		font-size: 1.5rem;
+		margin-bottom: 10px;
+	}
+
+	.project-card p {
+		font-size: 1rem;
+		color: #ddd;
+		margin-bottom: 15px;
+	}
+
+	/* Buttons */
+	.button {
+		display: inline-block;
+		padding: 10px 20px;
+		border-radius: 6px;
+		background: #1e1e1e;
+		color: #ffffff;
+		font-weight: bold;
+		text-decoration: none;
+		transition: background 0.3s ease-in-out, transform 0.2s;
+	}
+
+	.button:hover {
+		background: #00cccc;
+		transform: scale(1.05);
 	}
 
 
